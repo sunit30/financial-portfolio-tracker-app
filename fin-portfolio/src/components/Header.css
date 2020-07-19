@@ -1,0 +1,33 @@
+.headerFlex {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  background-color: #1d7aca;
+}
+.headerFlex img {
+  height: 100%;
+  width: auto;
+  box-sizing: border-box;
+  padding: 4px;
+  padding-right: 0;
+}
+.headerFlex h2 {
+  text-align: center;
+  margin: auto;
+  margin-left: 7px;
+  margin-right: 5px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media only screen and (max-width: 768px) {
+  .headerFlex {
+    height: 30px;
+  }
+  .headerFlex h2 {
+    font-size: 16px;
+  }
+  .headerFlex img {
+    padding: 2px;
+    padding-right: 0;
+  }
+}

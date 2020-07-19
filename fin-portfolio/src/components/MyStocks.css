@@ -1,0 +1,77 @@
+.tableDiv {
+  overflow-x: auto;
+}
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  font-size: calc(0.3em + 1vw);
+}
+
+th,
+td {
+  box-sizing: border-box;
+  max-width: max-content;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 3px solid #bacbd9;
+  padding: 0.9% 0.9%;
+  text-align: center;
+}
+th {
+  color: white;
+  background-color: #1d7aca;
+}
+th:first-child {
+  max-width: 100px !important;
+}
+tbody tr:nth-child(odd) {
+  background-color: white;
+}
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tbody tr td:last-child div {
+  background-color: red;
+  color: white;
+
+  text-align: center;
+  border-radius: 8px;
+
+  font-size: calc(0.5em + 0.6vw);
+
+  box-sizing: border-box;
+  font-weight: 200;
+  transition-duration: 0.3s;
+  padding: 2px 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+tbody tr td:last-child div:hover {
+  cursor: pointer;
+  background-color: rgb(136, 136, 136);
+  border-color: red;
+}
+.msg {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.69);
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+  th,
+  td {
+    max-width: max-content;
+    box-sizing: border-box;
+    padding: 7px 1px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  tbody tr td:last-child div {
+    font-size: calc(0.5em + 0.8vw);
+  }
+  .msg {
+    font-size: 18px;
+  }
+}

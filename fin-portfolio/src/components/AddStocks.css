@@ -1,0 +1,97 @@
+.AddStocksTitle {
+  width: 80%;
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+}
+.outerflex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.StockButton {
+  width: 45px;
+  box-sizing: content-box;
+  background-color: #ffffff;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 12px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10%;
+  margin-right: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+}
+.StockButton:hover {
+  background-color: #a3a3a3;
+  color: white;
+}
+.AddStocksFlex {
+  width: 410px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+.AddStocksFlex label {
+  box-sizing: border-box;
+
+  padding-right: 15px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.AddStocksFlex label:hover {
+  font-size: 19px;
+}
+label div {
+  display: inline;
+}
+/* media queries */
+@media only screen and (max-width: 768px) {
+  .outerflex {
+    display: block;
+  }
+  .AddStocksTitle {
+    font-size: 15px;
+  }
+  .AddStocksTitle h2 {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  .AddStocksFlex {
+    width: 100%;
+    justify-content: center;
+    padding-right: 0;
+  }
+  .AddStocksFlex label {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 10%;
+    margin-right: 50%;
+    padding-right: 0;
+    margin: 2% 50% 3% 50%;
+  }
+  .AddStocksFlex label:hover {
+    font-size: 16px;
+  }
+  .StockButton {
+    margin: 12% auto;
+    font-size: 15px;
+    padding: 10px 21px;
+    width: 40px;
+  }
+  label div {
+    width: max-content;
+  }
+  .noselected {
+    font-size: 17px;
+  }
+}
